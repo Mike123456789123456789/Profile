@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "highScore": {
+        "type": "integer"
+      }
+    },
+    "patternProperties": {
+      "^[a-zA-Z0-9]+$": {
+        "type": "object",
+        "properties": {
+          "Image": {
+            "type": "string",
+            "format": "uri"
+          },
+          "Name": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    "additionalProperties": false
+  }
+  
